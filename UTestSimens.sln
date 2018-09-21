@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC.Tests", "WebMVC.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design23", "Design23\Design23.csproj", "{97B6B8D6-2835-4052-95DD-A02CE5997843}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensHP", "SiemensHP\SiemensHP.csproj", "{7305D4B1-DEEB-40CF-BF9B-8207D54BC5CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensHP.Tests", "SiemensHP.Tests\SiemensHP.Tests.csproj", "{0EEBDDDC-B429-48D6-ABCF-9C4E641CB1E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{97B6B8D6-2835-4052-95DD-A02CE5997843}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B6B8D6-2835-4052-95DD-A02CE5997843}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B6B8D6-2835-4052-95DD-A02CE5997843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7305D4B1-DEEB-40CF-BF9B-8207D54BC5CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7305D4B1-DEEB-40CF-BF9B-8207D54BC5CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7305D4B1-DEEB-40CF-BF9B-8207D54BC5CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7305D4B1-DEEB-40CF-BF9B-8207D54BC5CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEBDDDC-B429-48D6-ABCF-9C4E641CB1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEBDDDC-B429-48D6-ABCF-9C4E641CB1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEBDDDC-B429-48D6-ABCF-9C4E641CB1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEBDDDC-B429-48D6-ABCF-9C4E641CB1E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,672 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACCOUNT_FORBIDDEN" xml:space="preserve">
+    <value>当前帐号被禁用, 请联系你的3i 负责人</value>
+  </data>
+  <data name="Adding_other_colleagues" xml:space="preserve">
+    <value>增加其他同行人员</value>
+  </data>
+  <data name="Allergy" xml:space="preserve">
+    <value>过敏</value>
+  </data>
+  <data name="AllergyRemark" xml:space="preserve">
+    <value>如果未指定请列出其他过敏项</value>
+  </data>
+  <data name="All_Suggestions" xml:space="preserve">
+    <value>所有建议</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>预约申请</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>作者</value>
+  </data>
+  <data name="Bonus" xml:space="preserve">
+    <value>奖金</value>
+  </data>
+  <data name="Cancel_collection" xml:space="preserve">
+    <value>取消收藏</value>
+  </data>
+  <data name="cant_Implement" xml:space="preserve">
+    <value>不可实施，已关闭</value>
+  </data>
+  <data name="Center_3i" xml:space="preserve">
+    <value>3i 中心</value>
+  </data>
+  <data name="Collection" xml:space="preserve">
+    <value>收藏</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>评论</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="Create_Proposal" xml:space="preserve">
+    <value>创建新的建议</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>天数</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Destination" xml:space="preserve">
+    <value>目的地</value>
+  </data>
+  <data name="Economic_prize" xml:space="preserve">
+    <value>EVA奖</value>
+  </data>
+  <data name="Effective" xml:space="preserve">
+    <value>被评为有效， 小点子奖</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>邮箱</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="Factory" xml:space="preserve">
+    <value>工厂车间访问</value>
+  </data>
+  <data name="FirstContact" xml:space="preserve">
+    <value>第一联系人</value>
+  </data>
+  <data name="Format_Images" xml:space="preserve">
+    <value>必须上传jpg,png,gif文件</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="FromDate" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="Gift" xml:space="preserve">
+    <value>小礼品</value>
+  </data>
+  <data name="Green_bean" xml:space="preserve">
+    <value>花生</value>
+  </data>
+  <data name="Has_Bind_Other_Account" xml:space="preserve">
+    <value>该用户已绑定了其他微信帐号,请联系你的3i负责人</value>
+  </data>
+  <data name="Has_Bind_This_Account" xml:space="preserve">
+    <value>您当前已绑定了该微信帐号</value>
+  </data>
+  <data name="Images_Description" xml:space="preserve">
+    <value>图片描述</value>
+  </data>
+  <data name="Implement" xml:space="preserve">
+    <value>可实施，奖金评估中</value>
+  </data>
+  <data name="Implementable" xml:space="preserve">
+    <value>Implementable</value>
+  </data>
+  <data name="Implemented" xml:space="preserve">
+    <value>已实施</value>
+  </data>
+  <data name="implementing" xml:space="preserve">
+    <value>实施中</value>
+  </data>
+  <data name="Ineffective" xml:space="preserve">
+    <value>被评为无效, 已关闭</value>
+  </data>
+  <data name="Information_publish" xml:space="preserve">
+    <value>信息发布</value>
+  </data>
+  <data name="Input_Allergy" xml:space="preserve">
+    <value>请输入过敏</value>
+  </data>
+  <data name="Input_Comments" xml:space="preserve">
+    <value>请输入评论内容</value>
+  </data>
+  <data name="Input_CompanyName" xml:space="preserve">
+    <value>请输入公司</value>
+  </data>
+  <data name="Input_Destination" xml:space="preserve">
+    <value>请输入目的地</value>
+  </data>
+  <data name="Input_Email" xml:space="preserve">
+    <value>请输入邮箱</value>
+  </data>
+  <data name="Input_EndDate" xml:space="preserve">
+    <value>请输入结束时间</value>
+  </data>
+  <data name="Input_Factory" xml:space="preserve">
+    <value>请输入工厂车间访问</value>
+  </data>
+  <data name="Input_FirstContact" xml:space="preserve">
+    <value>请输入第一联系人</value>
+  </data>
+  <data name="Input_FromDate" xml:space="preserve">
+    <value>请输入开始时间</value>
+  </data>
+  <data name="Input_IsAirport" xml:space="preserve">
+    <value>请输入机场接机 </value>
+  </data>
+  <data name="Input_IsScreen" xml:space="preserve">
+    <value>请输入欢迎屏幕</value>
+  </data>
+  <data name="Input_IsTop" xml:space="preserve">
+    <value>请输入最高职位</value>
+  </data>
+  <data name="Input_Name" xml:space="preserve">
+    <value>请输入姓名</value>
+  </data>
+  <data name="Input_Phone" xml:space="preserve">
+    <value>请输入手机号</value>
+  </data>
+  <data name="Input_PlaneArrange" xml:space="preserve">
+    <value>请输入接机安排</value>
+  </data>
+  <data name="Input_Post" xml:space="preserve">
+    <value>请输入公司职位</value>
+  </data>
+  <data name="Input_Repast" xml:space="preserve">
+    <value>请输入饮食安排</value>
+  </data>
+  <data name="Input_RouteDescription" xml:space="preserve">
+    <value>请输入目的</value>
+  </data>
+  <data name="Input_SuggestOrLabel" xml:space="preserve">
+    <value>请输入建议名称/标签类型</value>
+  </data>
+  <data name="IsAirport" xml:space="preserve">
+    <value>机场接机</value>
+  </data>
+  <data name="IsScreen" xml:space="preserve">
+    <value>欢迎屏幕</value>
+  </data>
+  <data name="IsTop" xml:space="preserve">
+    <value>最高职位</value>
+  </data>
+  <data name="Journey" xml:space="preserve">
+    <value>我的行程</value>
+  </data>
+  <data name="Latest_Award" xml:space="preserve">
+    <value>最新获奖</value>
+  </data>
+  <data name="Length_Images_Description" xml:space="preserve">
+    <value>图片描述不得超过100字</value>
+  </data>
+  <data name="Length_Proposal_Others" xml:space="preserve">
+    <value>其他参与者姓名不得超过100字</value>
+  </data>
+  <data name="Length_Proposal_Question" xml:space="preserve">
+    <value>问题不得超过500字</value>
+  </data>
+  <data name="Length_Proposal_Suggestion" xml:space="preserve">
+    <value>改善建议不得超过500字</value>
+  </data>
+  <data name="Length_Proposal_Title" xml:space="preserve">
+    <value>新建议标题不得超过100字</value>
+  </data>
+  <data name="LOGIN_TIMEOUT" xml:space="preserve">
+    <value>登录超时, 请检查你的网络</value>
+  </data>
+  <data name="Max_Images" xml:space="preserve">
+    <value>图片不得超过9张</value>
+  </data>
+  <data name="Multiple_Matached_User" xml:space="preserve">
+    <value>存在多个匹配的用户,请联系你的3i负责人</value>
+  </data>
+  <data name="Muslim" xml:space="preserve">
+    <value>穆斯林</value>
+  </data>
+  <data name="My_collection" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="My_Collection1" xml:space="preserve">
+    <value>我的收藏</value>
+  </data>
+  <data name="My_Proposals" xml:space="preserve">
+    <value>我的建议</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Newest_Message" xml:space="preserve">
+    <value>消息中心</value>
+  </data>
+  <data name="Newest_Rank" xml:space="preserve">
+    <value>最新排名</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>新闻信息</value>
+  </data>
+  <data name="New_User_Register" xml:space="preserve">
+    <value>新用户注册</value>
+  </data>
+  <data name="NoRedMeat" xml:space="preserve">
+    <value>不吃红肉</value>
+  </data>
+  <data name="No_1" xml:space="preserve">
+    <value>第一名</value>
+  </data>
+  <data name="No_10" xml:space="preserve">
+    <value>第十名</value>
+  </data>
+  <data name="No_2" xml:space="preserve">
+    <value>第二名</value>
+  </data>
+  <data name="No_3" xml:space="preserve">
+    <value>第三名</value>
+  </data>
+  <data name="No_4" xml:space="preserve">
+    <value>第四名</value>
+  </data>
+  <data name="No_5" xml:space="preserve">
+    <value>第五名</value>
+  </data>
+  <data name="No_6" xml:space="preserve">
+    <value>第六名</value>
+  </data>
+  <data name="No_7" xml:space="preserve">
+    <value>第七名</value>
+  </data>
+  <data name="No_8" xml:space="preserve">
+    <value>第八名</value>
+  </data>
+  <data name="No_9" xml:space="preserve">
+    <value>第九名</value>
+  </data>
+  <data name="NO_AUTHORITY" xml:space="preserve">
+    <value>您无权访问该页面, 请联系你的3i 负责人</value>
+  </data>
+  <data name="No_Matached_User" xml:space="preserve">
+    <value>无匹配的用户，请重试，如仍有问题，请联系你的3i负责人。</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Ok1" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>展开</value>
+  </data>
+  <data name="Order_By_Bonus" xml:space="preserve">
+    <value>按总奖金排名</value>
+  </data>
+  <data name="Order_By_Counts" xml:space="preserve">
+    <value>按数量排名</value>
+  </data>
+  <data name="Order_By_EVA" xml:space="preserve">
+    <value>按EVA排名</value>
+  </data>
+  <data name="Personal_Center" xml:space="preserve">
+    <value>个人中心</value>
+  </data>
+  <data name="Personnel_information" xml:space="preserve">
+    <value>人员信息</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>手机号</value>
+  </data>
+  <data name="Phone1" xml:space="preserve">
+    <value>手机号</value>
+  </data>
+  <data name="Placeholder_EmployeeCode" xml:space="preserve">
+    <value>请输入您的员工号</value>
+  </data>
+  <data name="Placeholder_Phone" xml:space="preserve">
+    <value>请输入您的手机号</value>
+  </data>
+  <data name="Placeholder_Proposal_Others" xml:space="preserve">
+    <value>请输入其他参与者姓名（如果有）</value>
+  </data>
+  <data name="Placeholder_Proposal_Question" xml:space="preserve">
+    <value>请输入你发现的问题</value>
+  </data>
+  <data name="Placeholder_Proposal_Suggestion" xml:space="preserve">
+    <value>请输入你的改善建议</value>
+  </data>
+  <data name="Placeholder_Proposal_Title" xml:space="preserve">
+    <value>请输入新建议标题</value>
+  </data>
+  <data name="PlaneArrange" xml:space="preserve">
+    <value>接机安排</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>公司职位</value>
+  </data>
+  <data name="Prize" xml:space="preserve">
+    <value>一次性奖励</value>
+  </data>
+  <data name="Processed" xml:space="preserve">
+    <value>已处理</value>
+  </data>
+  <data name="Process_policy" xml:space="preserve">
+    <value>流程政策</value>
+  </data>
+  <data name="Prompt" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="Proposals_Number" xml:space="preserve">
+    <value>条</value>
+  </data>
+  <data name="Ranking_Department" xml:space="preserve">
+    <value>部门排名</value>
+  </data>
+  <data name="Ranking_HPOC" xml:space="preserve">
+    <value>HPOC排行榜</value>
+  </data>
+  <data name="Ranking_Number" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Ranking_Personal" xml:space="preserve">
+    <value>个人排名</value>
+  </data>
+  <data name="Ranking_Personal_Bonus" xml:space="preserve">
+    <value>个人总奖金排名</value>
+  </data>
+  <data name="Ranking_Personal_Counts" xml:space="preserve">
+    <value>个人建议排名</value>
+  </data>
+  <data name="Ranking_Personal_EVA" xml:space="preserve">
+    <value>个人EVA奖金排名</value>
+  </data>
+  <data name="Ranking_Personal_Info" xml:space="preserve">
+    <value>个人排名信息</value>
+  </data>
+  <data name="Ranking_Personal_List" xml:space="preserve">
+    <value>个人排行榜</value>
+  </data>
+  <data name="Ranking_SSAL_Personal" xml:space="preserve">
+    <value>SSAL排行榜</value>
+  </data>
+  <data name="Register_Success" xml:space="preserve">
+    <value>注册成功</value>
+  </data>
+  <data name="Repast" xml:space="preserve">
+    <value>饮食安排</value>
+  </data>
+  <data name="Required_EmployeeCode" xml:space="preserve">
+    <value>必须填写员工号</value>
+  </data>
+  <data name="Required_Images" xml:space="preserve">
+    <value>必须上传图片文件</value>
+  </data>
+  <data name="Required_Images_Description" xml:space="preserve">
+    <value>必须填写图片描述</value>
+  </data>
+  <data name="Required_Phone" xml:space="preserve">
+    <value>必须填写手机号</value>
+  </data>
+  <data name="Required_Proposal_CompanyLabel" xml:space="preserve">
+    <value>至少选择1个标签</value>
+  </data>
+  <data name="Required_Proposal_Question" xml:space="preserve">
+    <value>必须填写你发现的问题</value>
+  </data>
+  <data name="Required_Proposal_Suggestion" xml:space="preserve">
+    <value>必须填写改善建议</value>
+  </data>
+  <data name="Required_Proposal_Title" xml:space="preserve">
+    <value>必须填写新建议标题</value>
+  </data>
+  <data name="Reservations" xml:space="preserve">
+    <value>预约成功</value>
+  </data>
+  <data name="RouteDescription" xml:space="preserve">
+    <value>目的</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>行</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>进度</value>
+  </data>
+  <data name="Seafood" xml:space="preserve">
+    <value>海鲜类</value>
+  </data>
+  <data name="Siemens_3i" xml:space="preserve">
+    <value>西门子3i系统</value>
+  </data>
+  <data name="Small_Prize" xml:space="preserve">
+    <value>点子奖</value>
+  </data>
+  <data name="Submission" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="SubmissionAppointment" xml:space="preserve">
+    <value>提交预约</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>已提交</value>
+  </data>
+  <data name="Submit_Fail" xml:space="preserve">
+    <value>提交失败</value>
+  </data>
+  <data name="Submit_Proposal" xml:space="preserve">
+    <value>提交建议</value>
+  </data>
+  <data name="Submit_Sucess" xml:space="preserve">
+    <value>提交成功</value>
+  </data>
+  <data name="SYSTEM_ERROR" xml:space="preserve">
+    <value>系统请求处理异常，请重新尝试</value>
+  </data>
+  <data name="Take_up" xml:space="preserve">
+    <value>收起</value>
+  </data>
+  <data name="thumbs_up" xml:space="preserve">
+    <value>点赞</value>
+  </data>
+  <data name="Times" xml:space="preserve">
+    <value>次</value>
+  </data>
+  <data name="Tips" xml:space="preserve">
+    <value>提示</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="Total_Bonus" xml:space="preserve">
+    <value>累计奖励</value>
+  </data>
+  <data name="Total_Year_Gift" xml:space="preserve">
+    <value>本年度累积获得小礼品</value>
+  </data>
+  <data name="Travel_list" xml:space="preserve">
+    <value>我的行程单</value>
+  </data>
+  <data name="Untreated" xml:space="preserve">
+    <value>未处理</value>
+  </data>
+  <data name="Upload_Images" xml:space="preserve">
+    <value>上传图片</value>
+  </data>
+  <data name="Upload_Images_Fail" xml:space="preserve">
+    <value>图片上传失败</value>
+  </data>
+  <data name="Upload_Images_Sucess" xml:space="preserve">
+    <value>图片上传成功</value>
+  </data>
+  <data name="Vegetarian" xml:space="preserve">
+    <value>素食</value>
+  </data>
+  <data name="CheckEmailFormat" xml:space="preserve">
+    <value>请检查邮箱格式</value>
+  </data>
+  <data name="CheckLengthName20" xml:space="preserve">
+    <value>姓名长度不大于20</value>
+  </data>
+  <data name="CheckPhoneFormat" xml:space="preserve">
+    <value>请检查手机号格式</value>
+  </data>
+  <data name="CheckUniqueEmail" xml:space="preserve">
+    <value>邮箱必须唯一</value>
+  </data>
+  <data name="PleaseCheck" xml:space="preserve">
+    <value>请检查您的输入:</value>
+  </data>
+  <data name="Trip" xml:space="preserve">
+    <value>行程单</value>
+  </data>
+  <data name="入口" xml:space="preserve">
+    <value>入口</value>
+  </data>
+  <data name="预约" xml:space="preserve">
+    <value>预约</value>
+  </data>
+  <data name="公司长度不超过50" xml:space="preserve">
+    <value>公司长度不超过50</value>
+  </data>
+  <data name="其他过敏项长度不超过200" xml:space="preserve">
+    <value>其他过敏项长度不超过200</value>
+  </data>
+  <data name="工厂车间访问长度不超过200" xml:space="preserve">
+    <value>工厂车间访问长度不超过200</value>
+  </data>
+  <data name="接机安排200" xml:space="preserve">
+    <value>接机安排长度不超过200</value>
+  </data>
+  <data name="目的200" xml:space="preserve">
+    <value>目的长度不超过200</value>
+  </data>
+  <data name="目的地50" xml:space="preserve">
+    <value>目的地长度不超过50</value>
+  </data>
+  <data name="第一联系人20" xml:space="preserve">
+    <value>第一联系人长度不超过20</value>
+  </data>
+  <data name="过敏长度不超过20" xml:space="preserve">
+    <value>过敏长度不超过20</value>
+  </data>
+  <data name="邮箱长度不超过50" xml:space="preserve">
+    <value>邮箱长度不超过50</value>
+  </data>
+  <data name="饮食安排长度不超过20" xml:space="preserve">
+    <value>饮食安排长度不超过20</value>
+  </data>
+  <data name="CheckUniqueName" xml:space="preserve">
+    <value>用户名必须唯一</value>
+  </data>
+</root>

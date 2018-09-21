@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Collections.Generic;
+using Design23.Designs;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Design23.Tests
@@ -64,6 +65,15 @@ namespace Design23.Tests
             //
             // TODO: Add test logic here
             //
+            IObserver liSi=new LiSi();
+            IObserver wang=new Wang();
+            IObserver liu=new Liu();
+
+            IHanFeiZhi hanFeiZhi=new HanFeiZhi();
+            ((IObservable)hanFeiZhi).Add(liSi);
+            ((IObservable)hanFeiZhi).Add(wang);
+            ((IObservable)hanFeiZhi).Add(liu);
+            hanFeiZhi.Eat();
         }
     }
 }

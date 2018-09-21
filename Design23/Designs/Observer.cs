@@ -10,15 +10,13 @@ namespace Design23.Designs
 {
     public interface IObserver
     {
-        void Update(string context);
+        void Update(string value);
     }
-
     public interface IHanFeiZhi
     {
         void Eat();
         void Speak();
     }
-
     public class HanFeiZhi : IHanFeiZhi, IObservable
     {
         private ArrayList _observerList = new ArrayList();
@@ -78,7 +76,36 @@ namespace Design23.Designs
         //{
         //    throw new NotImplementedException();
         //}
-        
+    }
+    public class Wang : IObserver
+    {
+        public void Update(string value)
+        {
+          this.Cry();
+        }
+
+        private void Cry()
+        {
+            Debug.WriteLine("王正在哭");
+        }
+    }
+    public class Liu : IObserver
+    {
+        public void Update(string value)
+        {
+            this.Happy();
+        }
+        private void Happy()
+        {
+            Debug.WriteLine("正在开心");
+        }
     }
 
+    public class LiSi2:IObservable<Wang>
+    {
+        public IDisposable Subscribe(IObserver<Wang> observer)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

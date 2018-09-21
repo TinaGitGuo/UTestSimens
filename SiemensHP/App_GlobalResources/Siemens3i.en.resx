@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Center_3i" xml:space="preserve">
+    <value>Latest News</value>
+  </data>
+  <data name="ACCOUNT_FORBIDDEN" xml:space="preserve">
+    <value>Account disabled, please contact your 3i officer</value>
+  </data>
+  <data name="Adding_other_colleagues" xml:space="preserve">
+    <value>Adding other colleagues</value>
+  </data>
+  <data name="Allergy" xml:space="preserve">
+    <value>Allergy</value>
+  </data>
+  <data name="AllergyRemark" xml:space="preserve">
+    <value>Please specify if not listed </value>
+  </data>
+  <data name="All_Suggestions" xml:space="preserve">
+    <value>All Suggestions</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Bonus" xml:space="preserve">
+    <value>Awards</value>
+  </data>
+  <data name="Cancel_collection" xml:space="preserve">
+    <value>Remove from Favorite</value>
+  </data>
+  <data name="cant_Implement" xml:space="preserve">
+    <value>Can not be implemented, Closed</value>
+  </data>
+  <data name="Collection" xml:space="preserve">
+    <value>Favorite</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Create_Proposal" xml:space="preserve">
+    <value>Create new idea</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Destination" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="Economic_prize" xml:space="preserve">
+    <value>EVA Award</value>
+  </data>
+  <data name="Effective" xml:space="preserve">
+    <value>Effective, AFI</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Factory" xml:space="preserve">
+    <value>Factory workshop visit</value>
+  </data>
+  <data name="FirstContact" xml:space="preserve">
+    <value> First contact</value>
+  </data>
+  <data name="Format_Images" xml:space="preserve">
+    <value>jpg, png, gif format required</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="FromDate" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Gift" xml:space="preserve">
+    <value>Gift(s)</value>
+  </data>
+  <data name="Green_bean" xml:space="preserve">
+    <value>Peanut</value>
+  </data>
+  <data name="Has_Bind_Other_Account" xml:space="preserve">
+    <value>This user has been binded with other WeChat account,  please contact your 3i officer</value>
+  </data>
+  <data name="Has_Bind_This_Account" xml:space="preserve">
+    <value>Your 3i account has been binded with your WeChat account</value>
+  </data>
+  <data name="Images_Description" xml:space="preserve">
+    <value>Description for this picture</value>
+  </data>
+  <data name="Implement" xml:space="preserve">
+    <value>Can be implemented</value>
+  </data>
+  <data name="Implementable" xml:space="preserve">
+    <value>Implementable</value>
+  </data>
+  <data name="Implemented" xml:space="preserve">
+    <value>Implemented</value>
+  </data>
+  <data name="implementing" xml:space="preserve">
+    <value>In implementation</value>
+  </data>
+  <data name="Ineffective" xml:space="preserve">
+    <value>Invalid, Closed</value>
+  </data>
+  <data name="Information_publish" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Input_Allergy" xml:space="preserve">
+    <value>Please specify your allergy detail</value>
+  </data>
+  <data name="Input_Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Input_CompanyName" xml:space="preserve">
+    <value>Please enter your company name</value>
+  </data>
+  <data name="Input_Destination" xml:space="preserve">
+    <value>Please enter Destination</value>
+  </data>
+  <data name="Input_Email" xml:space="preserve">
+    <value>Please enter your email</value>
+  </data>
+  <data name="Input_EndDate" xml:space="preserve">
+    <value>Please enter end date</value>
+  </data>
+  <data name="Input_Factory" xml:space="preserve">
+    <value>Please check if you need visit workshop</value>
+  </data>
+  <data name="Input_FirstContact" xml:space="preserve">
+    <value>Please enter your first contact</value>
+  </data>
+  <data name="Input_FromDate" xml:space="preserve">
+    <value>Please enter start date</value>
+  </data>
+  <data name="Input_IsAirport" xml:space="preserve">
+    <value>Please check if you need airport pickup</value>
+  </data>
+  <data name="Input_IsScreen" xml:space="preserve">
+    <value>Please check if you need welcome screen (if applicable)</value>
+  </data>
+  <data name="Input_IsTop" xml:space="preserve">
+    <value>Plese check if you need airport pickup</value>
+  </data>
+  <data name="Input_Name" xml:space="preserve">
+    <value>Plese enter your name</value>
+  </data>
+  <data name="Input_Phone" xml:space="preserve">
+    <value>Please enter your mobile phone number</value>
+  </data>
+  <data name="Input_PlaneArrange" xml:space="preserve">
+    <value>Please enter your airport pickup detail</value>
+  </data>
+  <data name="Input_Post" xml:space="preserve">
+    <value>Please enter your title</value>
+  </data>
+  <data name="Input_Repast" xml:space="preserve">
+    <value>Please specify your repast</value>
+  </data>
+  <data name="Input_RouteDescription" xml:space="preserve">
+    <value>Please enter your trip purpose</value>
+  </data>
+  <data name="Input_Suggest/Label" xml:space="preserve">
+    <value>Please enter title / Please select labels</value>
+  </data>
+  <data name="IsAirport" xml:space="preserve">
+    <value>Airport Pickup</value>
+  </data>
+  <data name="IsScreen" xml:space="preserve">
+    <value>Welcome Screen</value>
+  </data>
+  <data name="IsTop" xml:space="preserve">
+    <value>Highest Title</value>
+  </data>
+  <data name="Journey" xml:space="preserve">
+    <value>My Travel</value>
+  </data>
+  <data name="Latest_Award" xml:space="preserve">
+    <value>Latest Awards</value>
+  </data>
+  <data name="Length_Images_Description" xml:space="preserve">
+    <value>Your picture description exceed 100 words</value>
+  </data>
+  <data name="Length_Proposal_Others" xml:space="preserve">
+    <value>Team member cannot exceed 100 words</value>
+  </data>
+  <data name="Length_Proposal_Question" xml:space="preserve">
+    <value>Problem cannot exceed 500 words</value>
+  </data>
+  <data name="Length_Proposal_Suggestion" xml:space="preserve">
+    <value> proposal cannot exceed  500 words</value>
+  </data>
+  <data name="Length_Proposal_Title" xml:space="preserve">
+    <value>Title cannot exceed 100 words</value>
+  </data>
+  <data name="LOGIN_TIMEOUT" xml:space="preserve">
+    <value>Timeout, please check your network connection</value>
+  </data>
+  <data name="Max_Images" xml:space="preserve">
+    <value>No more than 9 pictures are allowed</value>
+  </data>
+  <data name="Multiple_Matached_User" xml:space="preserve">
+    <value>Multiple users identified, please contact your 3i officer</value>
+  </data>
+  <data name="Muslim" xml:space="preserve">
+    <value>Muslim</value>
+  </data>
+  <data name="My_collection" xml:space="preserve">
+    <value>My Favorite</value>
+  </data>
+  <data name="My_Collection1" xml:space="preserve">
+    <value>My favorite </value>
+  </data>
+  <data name="My_Proposals" xml:space="preserve">
+    <value>My Ideas</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Newest_Message" xml:space="preserve">
+    <value>News </value>
+  </data>
+  <data name="Newest_Rank" xml:space="preserve">
+    <value>Ranking</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="New_User_Register" xml:space="preserve">
+    <value>New registration</value>
+  </data>
+  <data name="NoRedMeat" xml:space="preserve">
+    <value>No read meat</value>
+  </data>
+  <data name="No_1" xml:space="preserve">
+    <value>No. 1</value>
+  </data>
+  <data name="No_10" xml:space="preserve">
+    <value>No. 10</value>
+  </data>
+  <data name="No_2" xml:space="preserve">
+    <value>No. 2</value>
+  </data>
+  <data name="No_3" xml:space="preserve">
+    <value>No. 3</value>
+  </data>
+  <data name="No_4" xml:space="preserve">
+    <value>No. 4</value>
+  </data>
+  <data name="No_5" xml:space="preserve">
+    <value>No. 5</value>
+  </data>
+  <data name="No_6" xml:space="preserve">
+    <value>No. 6</value>
+  </data>
+  <data name="No_7" xml:space="preserve">
+    <value>No. 7</value>
+  </data>
+  <data name="No_8" xml:space="preserve">
+    <value>No. 8</value>
+  </data>
+  <data name="No_9" xml:space="preserve">
+    <value>No. 9</value>
+  </data>
+  <data name="NO_AUTHORITY" xml:space="preserve">
+    <value>Unauthorized user, please contact your 3i officer</value>
+  </data>
+  <data name="No_Matached_User" xml:space="preserve">
+    <value>No matching user, please retry, if problem still exists, please contact your 3i officer</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Ok1" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="Order_By_Bonus" xml:space="preserve">
+    <value>Total Awards</value>
+  </data>
+  <data name="Order_By_Counts" xml:space="preserve">
+    <value>Total Quanity</value>
+  </data>
+  <data name="Order_By_EVA" xml:space="preserve">
+    <value>Total EVA</value>
+  </data>
+  <data name="Personal_Center" xml:space="preserve">
+    <value>Me</value>
+  </data>
+  <data name="Personnel_information" xml:space="preserve">
+    <value>Personnel information</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Mobile No.</value>
+  </data>
+  <data name="Phone1" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Placeholder_EmployeeCode" xml:space="preserve">
+    <value>Please enter your employee ID!</value>
+  </data>
+  <data name="Placeholder_Phone" xml:space="preserve">
+    <value>Please enter your mobile number!</value>
+  </data>
+  <data name="Placeholder_Proposal_Others" xml:space="preserve">
+    <value>Team members (if any)</value>
+  </data>
+  <data name="Placeholder_Proposal_Question" xml:space="preserve">
+    <value>Describe the problem</value>
+  </data>
+  <data name="Placeholder_Proposal_Suggestion" xml:space="preserve">
+    <value>Describe the proposal</value>
+  </data>
+  <data name="Placeholder_Proposal_Title" xml:space="preserve">
+    <value>Title of your idea</value>
+  </data>
+  <data name="PlaneArrange" xml:space="preserve">
+    <value>Please enter your planning</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Prize" xml:space="preserve">
+    <value>Lum Sum Award</value>
+  </data>
+  <data name="Processed" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="Process_policy" xml:space="preserve">
+    <value>Policy</value>
+  </data>
+  <data name="Prompt" xml:space="preserve">
+    <value>Remind</value>
+  </data>
+  <data name="Proposals_Number" xml:space="preserve">
+    <value>No. </value>
+  </data>
+  <data name="Ranking_Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Ranking_HPOC" xml:space="preserve">
+    <value>Company Ranking</value>
+  </data>
+  <data name="Ranking_Number" xml:space="preserve">
+    <value>Ranking</value>
+  </data>
+  <data name="Ranking_Personal" xml:space="preserve">
+    <value>Personal Ranking</value>
+  </data>
+  <data name="Ranking_Personal_Bonus" xml:space="preserve">
+    <value>Total EVA</value>
+  </data>
+  <data name="Ranking_Personal_Counts" xml:space="preserve">
+    <value>Total Quanity</value>
+  </data>
+  <data name="Ranking_Personal_EVA" xml:space="preserve">
+    <value>Total Awards</value>
+  </data>
+  <data name="Ranking_Personal_Info" xml:space="preserve">
+    <value>Employee Ranking</value>
+  </data>
+  <data name="Ranking_Personal_List" xml:space="preserve">
+    <value>Ranking Board</value>
+  </data>
+  <data name="Ranking_SSAL_Personal" xml:space="preserve">
+    <value>SSAL Ranking</value>
+  </data>
+  <data name="Register_Success" xml:space="preserve">
+    <value>Registration Successful</value>
+  </data>
+  <data name="Repast" xml:space="preserve">
+    <value>Repast</value>
+  </data>
+  <data name="Required_EmployeeCode" xml:space="preserve">
+    <value>Please enter your employee ID!</value>
+  </data>
+  <data name="Required_Images" xml:space="preserve">
+    <value>Please upload pictures</value>
+  </data>
+  <data name="Required_Images_Description" xml:space="preserve">
+    <value>Please enter enter the description for your picture</value>
+  </data>
+  <data name="Required_Phone" xml:space="preserve">
+    <value>Please enter your mobile number!</value>
+  </data>
+  <data name="Required_Proposal_CompanyLabel" xml:space="preserve">
+    <value>at least 1 label shall be chosen</value>
+  </data>
+  <data name="Required_Proposal_Question" xml:space="preserve">
+    <value>Please enter enter the problem </value>
+  </data>
+  <data name="Required_Proposal_Suggestion" xml:space="preserve">
+    <value>Please enter your proposal</value>
+  </data>
+  <data name="Required_Proposal_Title" xml:space="preserve">
+    <value>Please enter the title for new idea</value>
+  </data>
+  <data name="Reservations" xml:space="preserve">
+    <value>Reservation  Confirmed</value>
+  </data>
+  <data name="RouteDescription" xml:space="preserve">
+    <value>Purpose</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="Schedule" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="Seafood" xml:space="preserve">
+    <value>Seafood</value>
+  </data>
+  <data name="Siemens_3i" xml:space="preserve">
+    <value>Siemens 3i System</value>
+  </data>
+  <data name="Small_Prize" xml:space="preserve">
+    <value>AFI Award</value>
+  </data>
+  <data name="Submission" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SubmissionAppointment" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>Submitted</value>
+  </data>
+  <data name="Submit_Fail" xml:space="preserve">
+    <value>Submisson failed</value>
+  </data>
+  <data name="Submit_Proposal" xml:space="preserve">
+    <value>New 3i</value>
+  </data>
+  <data name="Submit_Sucess" xml:space="preserve">
+    <value>Submission successful</value>
+  </data>
+  <data name="SYSTEM_ERROR" xml:space="preserve">
+    <value>System error, please try again later</value>
+  </data>
+  <data name="Take_up" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="thumbs_up" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="Times" xml:space="preserve">
+    <value>Total #</value>
+  </data>
+  <data name="Tips" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Total_Bonus" xml:space="preserve">
+    <value>Total Awards</value>
+  </data>
+  <data name="Total_Year_Gift" xml:space="preserve">
+    <value>Total gifts this fisical year</value>
+  </data>
+  <data name="Travel_list" xml:space="preserve">
+    <value>My travel list</value>
+  </data>
+  <data name="Untreated" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="Upload_Images" xml:space="preserve">
+    <value>Upload pictures</value>
+  </data>
+  <data name="Upload_Images_Fail" xml:space="preserve">
+    <value>Upload failed</value>
+  </data>
+  <data name="Upload_Images_Sucess" xml:space="preserve">
+    <value>Upload successful</value>
+  </data>
+  <data name="Vegetarian" xml:space="preserve">
+    <value>Vegetarian</value>
+  </data>
+  <data name="CheckEmailFormat" xml:space="preserve">
+    <value>Please check your Mailbox format</value>
+  </data>
+  <data name="CheckLengthName20" xml:space="preserve">
+    <value>Name length is no longer than 20</value>
+  </data>
+  <data name="CheckPhoneFormat" xml:space="preserve">
+    <value>Please check your Phone format</value>
+  </data>
+  <data name="CheckUniqueEmail" xml:space="preserve">
+    <value>Mailbox must be unique</value>
+  </data>
+  <data name="PleaseCheck" xml:space="preserve">
+    <value>Please check your input:</value>
+  </data>
+  <data name="入口" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="预约" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="公司长度不超过50" xml:space="preserve">
+    <value>The Company name length  is not more than 50</value>
+  </data>
+  <data name="其他过敏项长度不超过200" xml:space="preserve">
+    <value>The other lists length  is not more than 200</value>
+  </data>
+  <data name="工厂车间访问长度不超过200" xml:space="preserve">
+    <value>Note to the workshop  length is not more than 200</value>
+  </data>
+  <data name="接机安排200" xml:space="preserve">
+    <value>The airport pickup detail length is not more than 200</value>
+  </data>
+  <data name="目的200" xml:space="preserve">
+    <value>The RouteDescription length is not more than 200</value>
+  </data>
+  <data name="目的地50" xml:space="preserve">
+    <value>The Destination length is not more than 50</value>
+  </data>
+  <data name="第一联系人20" xml:space="preserve">
+    <value>The FirstContact length is not more than 20</value>
+  </data>
+  <data name="过敏长度不超过20" xml:space="preserve">
+    <value>The Allergy length  is not more than 20</value>
+  </data>
+  <data name="邮箱长度不超过50" xml:space="preserve">
+    <value>The mailbox length is not more than 50</value>
+  </data>
+  <data name="饮食安排长度不超过20" xml:space="preserve">
+    <value>The Repast length is not more than 20</value>
+  </data>
+  <data name="CheckUniqueName" xml:space="preserve">
+    <value>User name must be unique</value>
+  </data>
+</root>
