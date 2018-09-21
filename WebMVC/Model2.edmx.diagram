@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3d2934d9d93a4334a322f3180728c09a" Name="Diagram1">
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Directory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_MailTask" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_MaterielSAP" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.VersionData" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ApprovalRecord" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_CntrNo" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_CntrNoTypical" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_CntrNoTypicalLog" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_DirectoryClass" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_DirectoryGroup" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_DirectoryTemplate" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_File" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_MasterInfo" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_MaterielChildren" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_MaterielDesign" Width="1.5" PointX="6.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Menu" Width="1.5" PointX="8.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Product" Width="1.5" PointX="10.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductContract" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductContractHeader" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductData" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductDataLog" Width="1.5" PointX="12.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductDataLogTemp" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductDataPlan" Width="1.5" PointX="14.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductDataTemp" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProductSeries" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProjectContract" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_ProjectContractHeader" Width="1.5" PointX="0.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Role" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_RoleMenu" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Semifinished" Width="1.5" PointX="16.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_SemifinishedData" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Series" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_System" Width="1.5" PointX="18.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_SystemInfo" Width="1.5" PointX="8.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Typical" Width="1.5" PointX="10.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_TypicalData" Width="1.5" PointX="18.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_User" Width="1.5" PointX="12.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_UserDirectoryTemplate" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_UserRole" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_VMaterielDesign" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.V_ProjectContract_MateielDesign" Width="1.5" PointX="18.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.View_1" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.V_Version_VersionData" Width="1.5" PointX="5.375" PointY="20.75" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_VersionData" Width="1.5" PointX="15.375" PointY="20.75" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.T_Version" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.V_ProductContractMateielDesign" Width="1.5" PointX="7.375" PointY="21.75" />
+        <EntityTypeShape EntityType="SiemensBomTestFinalModel.ProductConnactVMaterelDesign" Width="1.5" PointX="23.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
