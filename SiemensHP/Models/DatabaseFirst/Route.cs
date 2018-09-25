@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Dynamic;
 
 using EfModel.App_GlobalResources;
+using SiemensHP.Models.DatabaseFirst;
 
 
 namespace EfModel
@@ -17,18 +18,17 @@ namespace EfModel
 
 
     [Table("Route")]
-    public partial class Route
+    public partial class Route: EntityBase
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Route()
         {
             RouteChecks = new HashSet<RouteCheck>();
-            RouteContacts = new HashSet<RouteContact>();
+            //RouteContacts = new HashSet<RouteContact>();
          
 
         }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+ 
 
         [Required(ErrorMessageResourceType = typeof(Siemens3i), ErrorMessageResourceName = "Input_Destination")]
    
@@ -88,29 +88,12 @@ namespace EfModel
         [Display(Name= "状态")]
         [Required]
         public int Status { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime? EditTime { get; set; }
-
-        public Guid? Editor { get; set; }
-        [Display(Name = "提交时间"), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true) ]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime CreateTime { get; set; } = DateTime.Now;
-        [Display(Name = "提交人")]
-        public Guid Creator { get; set; }
-
-
-
-
-
-        public virtual User User { get; set; }
-
-        public virtual User User1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RouteCheck> RouteChecks { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RouteContact> RouteContacts { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<RouteContact> RouteContacts { get; set; }
     }
 
 

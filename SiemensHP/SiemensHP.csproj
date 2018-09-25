@@ -172,8 +172,6 @@
     <Compile Include="Models\DatabaseFirst\RoleMenu.cs" />
     <Compile Include="Models\DatabaseFirst\Route.cs" />
     <Compile Include="Models\DatabaseFirst\RouteCheck.cs" />
-    <Compile Include="Models\DatabaseFirst\RouteConnect.cs" />
-    <Compile Include="Models\DatabaseFirst\SiemenHPInitializer.cs" />
     <Compile Include="Models\DatabaseFirst\SiemensHP.cs" />
     <Compile Include="Models\DatabaseFirst\User.cs" />
     <Compile Include="Models\DatabaseFirst\UserRole.cs" />
@@ -222,6 +220,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\CodeFirst\" />
+    <Folder Include="Models\Metadata\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

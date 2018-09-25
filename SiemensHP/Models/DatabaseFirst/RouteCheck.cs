@@ -1,3 +1,5 @@
+using SiemensHP.Models.DatabaseFirst;
+
 namespace EfModel
 {
     using System;
@@ -7,22 +9,11 @@ namespace EfModel
     using System.Data.Entity.Spatial;
 
     [Table("RouteCheck")]
-    public partial class RouteCheck
+    public partial class RouteCheck:EntityBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
-
         public Guid RouteId { get; set; }
-
         [StringLength(200)]
         public string Remark { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime CreateTime { get; set; } = System.DateTime.Now;
-
-        public Guid Creator { get; set; }
-
         public virtual Route Route { get; set; }
-
-        public virtual User User { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace SiemensHP.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EfModel.SiemensHP>
+    internal sealed class Configuration :  DbMigrationsConfiguration<EfModel.SiemensHP> 
     {
         public Configuration()
         {
@@ -20,6 +20,7 @@ namespace SiemensHP.Migrations
 
         protected override void Seed(EfModel.SiemensHP context)
         {
+            
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
@@ -30,31 +31,39 @@ namespace SiemensHP.Migrations
     {
         protected override void Generate(AddColumnOperation addColumnOperation)
         {
-            SetCreatedUtcColumn(addColumnOperation.Column);
+            SetCreateTimeColumn(addColumnOperation.Column);
 
             base.Generate(addColumnOperation);
         }
 
         protected override void Generate(CreateTableOperation createTableOperation)
         {
-            SetCreatedUtcColumn(createTableOperation.Columns);
+            SetColumn(createTableOperation.Columns);
 
             base.Generate(createTableOperation);
         }
 
-        private static void SetCreatedUtcColumn(IEnumerable<ColumnModel> columns)
+        private static void SetColumn(IEnumerable<ColumnModel> columns)
         {
             foreach (var columnModel in columns)
             {
-                SetCreatedUtcColumn(columnModel);
+                SetCreateTimeColumn(columnModel);
+                SetGuidIdColumn(columnModel);
             }
         }
 
-        private static void SetCreatedUtcColumn(PropertyModel column)
+        private static void SetCreateTimeColumn(PropertyModel column)
         {
-            if (column.Name == "CreatedUtc")
+            if (column.Name == "CreateTime")
             {
-                column.DefaultValueSql = "GETUTCDATE()";
+                column.DefaultValueSql = "GETDATE()";
+            }
+        }
+        private static void SetGuidIdColumn(PropertyModel column)
+        {
+            if (column.Name == "Id")
+            {
+                column.DefaultValueSql = "newsequentialid()";
             }
         }
     }

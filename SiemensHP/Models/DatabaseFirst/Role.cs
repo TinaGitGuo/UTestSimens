@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using SiemensHP.Models.DatabaseFirst;
 
 namespace EfModel
 {
@@ -9,7 +10,7 @@ namespace EfModel
     using System.Data.Entity.Spatial;
 
     [Table("Role")]
-    public partial class Role
+    public partial class Role : EntityBase
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Role()
@@ -17,27 +18,12 @@ namespace EfModel
             RoleMenus = new HashSet<RoleMenu>();
             UserRoles = new HashSet<UserRole>();
         }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
-
         [Required]
         [StringLength(20)]
         public string Name { get; set; }
 
         [StringLength(200)]
         public string Description { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime? EditTime { get; set; }
-
-        public Guid? Editor { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime CreateTime { get; set; } = DateTime.Now;
-
-        public Guid Creator { get; set; }
-
-        public virtual User User { get; set; }
-
-        public virtual User User1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RoleMenu> RoleMenus { get; set; }

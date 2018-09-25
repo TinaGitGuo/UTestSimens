@@ -24,7 +24,7 @@ namespace EfModel
         public virtual DbSet<RoleMenu> RoleMenus { get; set; }
         public virtual DbSet<Route> Routes { get; set; }
         public virtual DbSet<RouteCheck> RouteChecks { get; set; }
-        public virtual DbSet<RouteContact> RouteContacts { get; set; }
+        //public virtual DbSet<RouteContact> RouteContacts { get; set; }
      
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserRole> UserRoles { get; set; }
@@ -52,48 +52,22 @@ namespace EfModel
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Route>()
-                .HasMany(e => e.RouteContacts)
-                .WithRequired(e => e.Route)
-                .WillCascadeOnDelete(false);
+                .HasRequired(e => e.Creator).WithMany(a => a.CreatorRoutes).WillCascadeOnDelete(false);
+            modelBuilder.Entity<Route>()
+                .HasOptional(e => e.Editor).WithMany(a => a.EditorRoutes).WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.Roles)
-                .WithOptional(e => e.User)
-                .HasForeignKey(e => e.Editor);
+            modelBuilder.Entity<Role>()
+                .HasRequired(e => e.Creator).WithMany(a => a.CreatorRoles).WillCascadeOnDelete(false);
+            modelBuilder.Entity<Role>()
+                .HasOptional(e => e.Editor).WithMany(a => a.EditorRoles).WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.Roles1)
-                .WithRequired(e => e.User1)
-                .HasForeignKey(e => e.Creator)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<RouteCheck>()
+                .HasRequired(e => e.Editor).WithMany(a => a.CreatorRouteChecks).WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.RoleMenus)
-                .WithRequired(e => e.User)
-                .HasForeignKey(e => e.Creator)
-                .WillCascadeOnDelete(false);
+            modelBuilder.Entity<RouteCheck>()
+                .HasOptional(e => e.Editor).WithMany(a => a.EditorRouteChecks).WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.RoleMenus1)
-                .WithOptional(e => e.User1)
-                .HasForeignKey(e => e.Editor);
 
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.Routes)
-                .WithRequired(e => e.User)
-                .HasForeignKey(e => e.Creator)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.Routes1)
-                .WithOptional(e => e.User1)
-                .HasForeignKey(e => e.Editor);
-
-            modelBuilder.Entity<User>()
-                .HasMany(e => e.RouteChecks)
-                .WithRequired(e => e.User)
-                .HasForeignKey(e => e.Creator)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<User>()
                 .HasMany(e => e.UserRoles)

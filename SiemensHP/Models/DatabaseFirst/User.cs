@@ -2,6 +2,7 @@
 using System.Runtime.Remoting;
 using System.Web.Mvc;
 using EfModel.App_GlobalResources;
+using SiemensHP.Models.DatabaseFirst;
 
 
 namespace EfModel
@@ -13,24 +14,24 @@ namespace EfModel
     using System.Data.Entity.Spatial;
 
     [Table("User")]
-    public partial class User
+    public partial class User: UserEntityBase
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
-            Roles = new HashSet<Role>();
-            Roles1 = new HashSet<Role>();
+            CreatorRoles = new HashSet<Role>();
+            EditorRoles = new HashSet<Role>();
+
             RoleMenus = new HashSet<RoleMenu>();
-            RoleMenus1 = new HashSet<RoleMenu>();
-            Routes = new HashSet<Route>();
-            Routes1 = new HashSet<Route>();
-            RouteChecks = new HashSet<RouteCheck>();
+          
+            CreatorRoutes = new HashSet<Route>();
+            EditorRoutes = new HashSet<Route>();
+
+           CreatorRouteChecks   = new HashSet<RouteCheck>();
+            EditorRouteChecks = new HashSet<RouteCheck>();
+
             UserRoles = new HashSet<UserRole>();
-
-
-        }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
+        } 
 
         [Required(ErrorMessageResourceType = typeof(Siemens3i), ErrorMessageResourceName = "Input_Name")]
         [StringLength(20, ErrorMessageResourceType = typeof(Siemens3i), ErrorMessageResourceName = "CheckLengthName20")]
@@ -62,38 +63,33 @@ namespace EfModel
         [Display(ResourceType = typeof(Siemens3i), Name = "Post")]
         [StringLength(20)]
         public string Post { get; set; }
-        [Display(Name = "更新时间")]
-        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
-        public DateTime? EditTime { get; set; }
-        public Guid? Editor { get; set; }
+ 
         [Display(Name = "禁用")]
         public bool IsDisable { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public DateTime CreateTime { get; set; } = DateTime.Now;
 
-        public Guid Creator { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Role> Roles { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Role> Roles1 { get; set; }
+        //[InverseProperty("CreatorUser")]
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Role> CreatorRoles { get; set; }
+        //[InverseProperty("EditorUser")]
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Role> EditorRoles { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<RoleMenu> RoleMenus { get; set; }
 
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<Route> Routes { get; set; }
+        //[InverseProperty("CreatorUser")]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RoleMenu> RoleMenus1 { get; set; }
+        public virtual ICollection<Route> CreatorRoutes { get; set; }
+        //[InverseProperty("EditorUser")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Route> EditorRoutes { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Route> Routes { get; set; }
-
+        public virtual ICollection<RouteCheck> CreatorRouteChecks { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Route> Routes1 { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RouteCheck> RouteChecks { get; set; }
-
+        public virtual ICollection<RouteCheck> EditorRouteChecks { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserRole> UserRoles { get; set; }
     }

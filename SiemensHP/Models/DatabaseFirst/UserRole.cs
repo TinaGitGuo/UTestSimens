@@ -1,3 +1,5 @@
+using SiemensHP.Models.DatabaseFirst;
+
 namespace EfModel
 {
     using System;
@@ -7,11 +9,8 @@ namespace EfModel
     using System.Data.Entity.Spatial;
 
     [Table("UserRole")]
-    public partial class UserRole
+    public partial class UserRole: IdBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid Id { get; set; }
-
         public Guid UserId { get; set; }
 
         public Guid RoleId { get; set; }

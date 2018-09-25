@@ -31,7 +31,7 @@ namespace EfModel
 
             var menus = new List<Menu>
             {
-                new Menu{Id=new Guid("376E916E-AA1C-4505-836C-45BE23D92A5C"),Name="用户管理",Code="1",Url="Users/Index",ParentID="0"}
+                new Menu{Id=new Guid("376E916E-AA1C-4505-836C-45BE23D92A5C"),Name="用户管理",Code="1",Url="Users/Index",ParentId="0"}
             };
             menus.ForEach(s => context.Menus.Add(s));
             context.SaveChanges();
